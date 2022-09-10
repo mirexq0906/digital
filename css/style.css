@@ -341,6 +341,7 @@ body {
     background: url('../images/Gradient.png') no-repeat;
     background-position: left bottom;
     background-size: 100%;
+    pointer-events: none;
 }
 .section-inspire__column {
     flex-direction: column;
