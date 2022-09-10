@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script defer src="js/accordions.js"></script>
+    <script defer src="js/modals.js"></script>
+    <script defer src="js/video.js"></script>
+    <script defer src="js/scroll.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container container__header">
+            <a href="#" class="header__logo">
+                <img src="images/Logo.svg" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#hero-scroll" class="header__item-link">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#inspire-scroll" class="header__item-link">Videos</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#find-scroll" class="header__item-link">Faces</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#offer-scroll" class="header__item-link">Offer</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#questions-scroll" class="header__item-link">F.A.Q</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="second-button header_btn" id="log-btn"><span class="button-background">Log In</span></button>
+        </div>
+    </header>
+    <main>
+        <section class="section-hero" id="hero-scroll">
+            <div class="container section-hero-container">
+                <h1 class="heading section-hero__heading">Face the future of video production</h1>
+                <p class="description section-hero__description">First NFT marketplace of digital faces with a platform for AI video generation</p>
+                <button class="button section-hero__btn-digitize" id="guests-btn">Digitize your face</button>
+                <button class="second-button section-hero__btn-create" id="company-btn"><span class="button-background">Create a video</span></button>
+                <div class="section-hero__technology">
+                    <span class="section-hero__play" data-path="section-hero__main" id="play-video">
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                    </span>
+                    <video class="section-hero__video" data-target="section-hero__main" >
+                        <source src="video/Digital_Grapes.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <p class="description section-hero__technology-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio distinctio harum sint alias eum provident pariatur non aspernatur repellat dolorem architecto doloribus, recusandae quas nemo saepe praesentium, totam exercitationem reiciendis!</p>
+            </div>
+        </section>
+
+        <section class="section-inspire" id="inspire-scroll">
+            <div class="container section-inspire__container">
+                <div class="section-inspire__left">
+                    <div class="section-inspire__scroll-content">
+                        <h1 class="heading section-inspire__heading">Get Inspired</h1>
+                        <button class="button section-inspire__btn" id="guests-btn-two">Generate your video</button>
+                    </div>
+                </div>
+                <div class="section-inspire__right">
+                    <div class="section-inspire__row">
+                        <div class="section-inspire__column">
+                            <div class="section-inspire__item">
+                                <span class="section-inspire__item-play" data-path="section-inspire__one" id="play-video">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                                </span>
+                                <video class="section-inspire__item-video" data-target="section-inspire__one" >
+                                    <source src="video/video__one.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                            <div class="section-inspire__item">
+                                <span class="section-inspire__item-play" data-path="section-inspire__two" id="play-video">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                                </span>
+                                <video class="section-inspire__item-video" data-target="section-inspire__two">
+                                    <source src="video/video__two.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                            <div class="section-inspire__item">
+                                <span class="section-inspire__item-play" data-path="section-inspire__three" id="play-video">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                                </span>
+                                <video class="section-inspire__item-video" data-target="section-inspire__three">
+                                    <source src="video/video__three.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                            <div class="section-inspire__item">
+                                <span class="section-inspire__item-play" data-path="section-inspire__four" id="play-video">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                                </span>
+                                <video class="section-inspire__item-video" data-target="section-inspire__four">
+                                    <source src="video/video__four.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                        </div>
+                        <div class="section-inspire__column">
+                            <div class="section-inspire__item">
+                                <span class="section-inspire__item-play" data-path="section-inspire__five" id="play-video">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                                </span>
+                                <video class="section-inspire__item-video" data-target="section-inspire__five">
+                                    <source src="video/video__five.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                            <div class="section-inspire__item">
+                                <span class="section-inspire__item-play" data-path="section-inspire__six" id="play-video">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                                </span>
+                                <video class="section-inspire__item-video" data-target="section-inspire__six">
+                                    <source src="video/video__six.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                            <div class="section-inspire__item">
+                                <span class="section-inspire__item-play" data-path="section-inspire__seven" id="play-video">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                                </span>
+                                <video class="section-inspire__item-video" data-target="section-inspire__seven">
+                                    <source src="video/video__seven.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                            <div class="section-inspire__item">
+                                <span class="section-inspire__item-play" data-path="section-inspire__eight" id="play-video">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.844 11.1176C21.5502 11.494 21.5502 12.5063 20.844 12.8827L1.4703 23.207C0.8042 23.562 8.98949e-07 23.0793 9.31941e-07 22.3245L1.83452e-06 1.6758C1.86752e-06 0.921028 0.804201 0.438327 1.4703 0.793293L20.844 11.1176Z" fill="white"/></svg>
+                                </span>
+                                <video class="section-inspire__item-video" data-target="section-inspire__eight">
+                                    <source src="video/video__eight.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-inspire__tiktok">
+                        <span class="second-heading section-inspire__title">More videos in our</span>
+                        <a href="https://www.tiktok.com/@digitalverse" class="section-inspire__btn-tiktok">
+                            <svg width="96" height="34" viewBox="0 0 96 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_285_1110)">
+                                <path d="M7.99435 13.6346V12.729C7.68409 12.6875 7.36866 12.6616 7.04288 12.6616C3.15947 12.6565 0 15.8186 0 19.7105C0 22.0963 1.18933 24.2079 3.00952 25.4862C1.8357 24.2286 1.11693 22.5362 1.11693 20.6834C1.11693 16.8485 4.1885 13.7226 7.99435 13.6346Z" fill="#25F4EE"/>
+                                <path d="M8.16525 23.9028C9.89755 23.9028 11.3144 22.5211 11.3765 20.8029L11.3816 5.44758H14.1843C14.1274 5.13188 14.0964 4.80583 14.0964 4.47461H10.2698L10.2647 19.8299C10.2027 21.5481 8.78575 22.9299 7.0535 22.9299C6.51571 22.9299 6.00896 22.7953 5.55908 22.5573C6.13823 23.3698 7.0897 23.9028 8.16525 23.9028Z" fill="#25F4EE"/>
+                                <path d="M19.4219 10.6579V9.80403C18.3516 9.80403 17.3587 9.48831 16.521 8.9397C17.2656 9.79366 18.2739 10.4147 19.4219 10.6579Z" fill="#25F4EE"/>
+                                <path d="M16.5208 8.94182C15.7037 8.00511 15.2125 6.78372 15.2125 5.44849H14.1887C14.4524 6.90794 15.3212 8.16038 16.5208 8.94182Z" fill="#FE2C55"/>
+                                <path d="M7.04741 16.486C5.27376 16.486 3.83105 17.9299 3.83105 19.705C3.83105 20.942 4.5343 22.0184 5.55816 22.5567C5.17551 22.0288 4.94799 21.3819 4.94799 20.678C4.94799 18.9029 6.39069 17.4589 8.16437 17.4589C8.4953 17.4589 8.81588 17.5158 9.1158 17.609V13.6965C8.80551 13.6551 8.49012 13.6292 8.16437 13.6292C8.10746 13.6292 8.05575 13.6343 7.99886 13.6343V16.636C7.69378 16.5429 7.37835 16.486 7.04741 16.486Z" fill="#FE2C55"/>
+                                <path d="M19.4215 10.6599V13.6357C17.4359 13.6357 15.595 12.9992 14.0954 11.9227V19.7116C14.0954 23.5983 10.9359 26.7656 7.04733 26.7656C5.54774 26.7656 4.15158 26.2895 3.00879 25.4873C4.29636 26.8691 6.13206 27.7386 8.1643 27.7386C12.0477 27.7386 15.2123 24.5764 15.2123 20.6846V12.8957C16.7119 13.9722 18.5528 14.6087 20.5384 14.6087V10.779C20.1506 10.779 19.7783 10.7375 19.4215 10.6599Z" fill="#FE2C55"/>
+                                <path d="M14.0954 19.7117V11.9228C15.595 12.9993 17.4359 13.6358 19.4215 13.6358V10.66C18.2736 10.4168 17.2652 9.79578 16.5206 8.94182C15.3209 8.16038 14.4574 6.90794 14.1833 5.44849H11.3806L11.3754 20.8037C11.3134 22.5219 9.89652 23.9038 8.1643 23.9038C7.0887 23.9038 6.14241 23.3707 5.55292 22.5633C4.52906 22.0199 3.82581 20.9487 3.82581 19.7117C3.82581 17.9366 5.26851 16.4926 7.04216 16.4926C7.3731 16.4926 7.69371 16.5496 7.99363 16.6427V13.641C4.18778 13.7238 1.11621 16.8497 1.11621 20.6847C1.11621 22.5374 1.83498 24.2247 3.00879 25.4874C4.15158 26.2896 5.54775 26.7657 7.04733 26.7657C10.9308 26.7657 14.0954 23.5984 14.0954 19.7117Z" fill="white"/>
+                                <path d="M24.3237 10.6694H36.2843L35.188 14.0956H32.0854V26.7596H28.2175V14.0956L24.3289 14.1007L24.3237 10.6694Z" fill="white"/>
+                                <path d="M55.8823 10.6694H68.1221L67.0258 14.0956H63.6492V26.7596H59.7761V14.0956L55.8875 14.1007L55.8823 10.6694Z" fill="white"/>
+                                <path d="M37.02 15.7891H40.8517V26.7608H37.0407L37.02 15.7891Z" fill="white"/>
+                                <path d="M42.3755 10.6282H46.2072V18.122L50.0027 14.3906H54.5739L49.7701 19.0536L55.1479 26.7596H50.9283L47.3396 21.4187L46.2021 22.521V26.7596H42.3704V10.6282H42.3755Z" fill="white"/>
+                                <path d="M82.9683 10.6282H86.8006V18.122L90.5956 14.3906H95.167L90.3633 19.0536L95.7409 26.7596H91.5266L87.9379 21.4187L86.8006 22.521V26.7596H82.9683V10.6282Z" fill="white"/>
+                                <path d="M38.9329 14.5366C39.9982 14.5366 40.8617 13.6723 40.8617 12.6062C40.8617 11.5401 39.9982 10.6758 38.9329 10.6758C37.8677 10.6758 37.0042 11.5401 37.0042 12.6062C37.0042 13.6723 37.8677 14.5366 38.9329 14.5366Z" fill="white"/>
+                                <path d="M67.6313 20.1935C67.6313 16.7416 70.2944 13.9106 73.6814 13.6467C73.5107 13.6312 73.2781 13.626 73.1074 13.626C69.4825 13.626 66.5454 16.5656 66.5454 20.1935C66.5454 23.8214 69.4825 26.761 73.1074 26.761C73.2781 26.761 73.5107 26.7506 73.6814 26.7403C70.2996 26.4764 67.6313 23.6455 67.6313 20.1935Z" fill="#25F4EE"/>
+                                <path d="M75.1707 13.626C74.9949 13.626 74.7621 13.6363 74.5916 13.6467C77.9733 13.9106 80.6364 16.7416 80.6364 20.1935C80.6364 23.6455 77.9733 26.4764 74.5916 26.7403C74.7621 26.7558 74.9949 26.761 75.1707 26.761C78.7955 26.761 81.7328 23.8214 81.7328 20.1935C81.7328 16.5656 78.7955 13.626 75.1707 13.626Z" fill="#FE2C55"/>
+                                <path d="M74.1366 23.3867C72.3733 23.3867 70.9461 21.9583 70.9461 20.1935C70.9461 18.4287 72.3733 17.0003 74.1366 17.0003C75.8999 17.0003 77.3271 18.4287 77.3271 20.1935C77.3271 21.9583 75.8948 23.3867 74.1366 23.3867ZM74.1366 13.626C70.5118 13.626 67.5747 16.5656 67.5747 20.1935C67.5747 23.8214 70.5118 26.761 74.1366 26.761C77.7615 26.761 80.6986 23.8214 80.6986 20.1935C80.6986 16.5656 77.7615 13.626 74.1366 13.626Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_285_1110">
+                                <rect width="95.5238" height="34" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-find" id="find-scroll">
+            <div class="container section-find__container">
+                <div class="section-find__soon">
+                    <span class="second-heading section-find__title">SOON</span>
+                </div>
+                <h1 class="heading section-find__heading">Find Your Face</h1>
+                <p class="description section-find__description">Easily purchase a face for your video from our marketplace. Your ownership will be secured by an NFT token and recorded in the most secure database - blockchain.</p>
+                <form class="section-find__form">
+                    <input class="section-find__input" type="text" placeholder="label">
+                    <button class="button section-find__btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="section-find__slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-row">
+                                <img src="images/slide1.png" alt="#">
+                                <div class="slider-content">
+                                    <p class="slider-name">Brad Pitt</p>
+                                    <p class="slider-description">From $ 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="section-offer" id="offer-scroll">
+            <div class="container section-offer__container">
+                <h1 class="heading section-offer__heading">What We Offer</h1>
+                <ul class="section-offer__list">
+                    <li class="section-offer__item">
+                        <div class="section-offer__item-top">
+                            <img src="/images/Subtract.svg" alt="#" class="section-offer__item-image">
+                            <h2 class="second-heading section-offer__item-title">For Users</h2>
+                            <p class="description section-offer__item-description">Digitaze your face ones and keep making passive income every time it was used. Gain visibility among advertising agencies and other video creators.</p>
+                        </div>
+                        <div class="section-offer__item-bottom">
+                            <a href="digital.html" class="button section-offer-item-btn">How to digitize a face</a>
+                        </div>
+                    </li>
+                    <li class="section-offer__item">
+                        <div class="section-offer__item-top">
+                            <img src="/images/Union.svg" alt="#" class="section-offer__item-image">
+                            <h2 class="second-heading section-offer__item-title">For Video Creators</h2>
+                            <p class="description section-offer__item-description">Find a face for your project and generate a custom video within one platform. Enjoy the next generation video production services without the need for real filming and with digital confirmation on blockchain.</p>
+                        </div>
+                        <div class="section-offer__item-bottom">
+                            <a href="generate.html" class="second-button section-offer-item-btn"><span class="button-background">How to create a video</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-support">
+            <div class="container section-support__container">
+                <h1 class="heading section-support__heading">Supported by</h1>
+                <ul class="section-support__list">
+                    <li class="section-support__item">
+                        <a href="#" class="section-support__item-link">
+                            <img src="images/fond.png" alt="fond">
+                        </a>
+                    </li>
+                    <li class="section-support__item">
+                        <a href="#" class="section-support__item-link">
+                            <img src="images/sk.png" alt="skolovo">
+                        </a>
+                    </li>
+                    <li class="section-support__item">
+                        <a href="#" class="section-support__item-link">
+                            <img src="images/coinex.png" alt="coinEx">
+                        </a>
+                    </li>
+                    <li class="section-support__item">
+                        <a href="#" class="section-support__item-link">
+                            <img src="images/cronos.png" alt="cronos">
+                        </a>
+                    </li>
+                    <li class="section-support__item">
+                        <a href="#" class="section-support__item-link">
+                            <img src="images/plygon.png" alt="polygon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-questions" id="questions-scroll">
+            <div class="container section-questions__container">
+                <h1 class="heading section-questions__heading">F.A.Q</h1>
+                <div class="accordion">
+                    <ul class="accordion-list">
+                        <li class="accordion-item">
+                            <div class="accordion-item-title" data-path="section-moments__accordion-one">
+                                <h3 class="accordion-item-heading">What is a Digital Avatar?</h3>
+                                <span class="accordion-item-plus" >
+                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.8">
+                                        <path d="M2.41379 14.3637H25.601" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        <path d="M14.3429 26L14.3429 2" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion-item-description" data-target="section-moments__accordion-one">
+                                <div class="accordion-item-content">
+                                    <p class="description accordion-description">Avatar is a digital representation of a human that can be used for synthetic video creation at our platform. Each avatar on the Digital Verse marketplace is provided by a real person with his consent. Therefore, the use of our digital faces is absolutely legal.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-item-title" data-path="section-moments__accordion-two">
+                                <h3 class="accordion-item-heading">What is the price of a digital face?</h3>
+                                <span class="accordion-item-plus">
+                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.8">
+                                        <path d="M2.41379 14.3637H25.601" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        <path d="M14.3429 26L14.3429 2" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion-item-description" data-target="section-moments__accordion-two">
+                                <div class="accordion-item-content">
+                                    <p class="description accordion-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, alias, laborum voluptatibus repellendus magni modi saepe totam doloribus, sint incidunt quasi officia accusantium voluptates impedit accusamus? Nemo cum nulla ad!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-item-title" data-path="section-questions__accordion-three">
+                                <h3 class="accordion-item-heading">How much does it cost to generate a video?</h3>
+                                <span class="accordion-item-plus">
+                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.8">
+                                        <path d="M2.41379 14.3637H25.601" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        <path d="M14.3429 26L14.3429 2" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion-item-description" data-target="section-questions__accordion-three">
+                                <div class="accordion-item-content">
+                                    <p class="description accordion-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, alias, laborum voluptatibus repellendus magni modi saepe totam doloribus, sint incidunt quasi officia accusantium voluptates impedit accusamus? Nemo cum nulla ad!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-item-title" data-path="section-questions__accordion-five">
+                                <h3 class="accordion-item-heading">How long does it take to generate a video?</h3>
+                                <span class="accordion-item-plus">
+                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.8">
+                                        <path d="M2.41379 14.3637H25.601" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        <path d="M14.3429 26L14.3429 2" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion-item-description" data-target="section-questions__accordion-five">
+                                <div class="accordion-item-content">
+                                    <p class="description accordion-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, alias, laborum voluptatibus repellendus magni modi saepe totam doloribus, sint incidunt quasi officia accusantium voluptates impedit accusamus? Nemo cum nulla ad!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-item-title" data-path="section-questions__accordion-six">
+                                <h3 class="accordion-item-heading">Is it legal?</h3>
+                                <span class="accordion-item-plus">
+                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.8">
+                                        <path d="M2.41379 14.3637H25.601" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        <path d="M14.3429 26L14.3429 2" stroke="#5C5C7B" stroke-width="2" stroke-linecap="square"/>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion-item-description" data-target="section-questions__accordion-six">
+                                <div class="accordion-item-content">
+                                    <p class="description accordion-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, alias, laborum voluptatibus repellendus magni modi saepe totam doloribus, sint incidunt quasi officia accusantium voluptates impedit accusamus? Nemo cum nulla ad!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact">
+            <div class="container section-contact__container">
+                <h1 class="heading section-contact__heading">Contact us</h1>
+                <h1 class="heading section-contact__mail">support@digitalverse.ai</h1>
+                <span class="section-contact__icon">
+                    <a href="https://twitter.com/Digital__Verse" class="section-contact__twitter">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="20" fill="#1DA1F2"/>
+                            <path d="M46.4725 24.9887C46.4725 25.3043 46.4725 25.62 46.4725 25.8905C46.4725 35.2238 39.2343 46 26.0406 46C21.9634 46 18.2068 44.8277 15 42.8438C15.5497 42.8889 16.1453 42.934 16.695 42.934C20.0393 42.934 23.1544 41.8068 25.6283 39.913C22.4673 39.868 19.8102 37.7939 18.9398 34.9984C19.3979 35.0886 19.8102 35.1337 20.3141 35.1337C20.9555 35.1337 21.5969 35.0435 22.1924 34.8631C18.894 34.2319 16.4202 31.3913 16.4202 27.9646C16.4202 27.9195 16.4202 27.9195 16.4202 27.8744C17.3822 28.4155 18.4817 28.7311 19.6728 28.7762C17.7487 27.5137 16.466 25.3494 16.466 22.8696C16.466 21.562 16.8325 20.3446 17.428 19.3076C20.9555 23.591 26.2696 26.3865 32.2251 26.7021C32.0877 26.2061 32.0419 25.62 32.0419 25.0789C32.0419 21.1562 35.2487 18 39.2343 18C41.2958 18 43.1741 18.8567 44.4568 20.2093C46.106 19.8937 47.6178 19.3076 49.038 18.496C48.4882 20.1643 47.3429 21.5169 45.877 22.4187C47.3429 22.2383 48.7173 21.8776 50 21.2915C49.0838 22.7343 47.8927 23.9968 46.4725 24.9887Z" fill="#F5F5F7"/>
+                        </svg>
+                    </a>
+                </span>
+                <span class="section-contact__icon">
+                    <a href="https://www.linkedin.com/company/digital-verse" class="section-contact__linkedin">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="20" fill="#0077B5"/>
+                            <path d="M50.0974 45.2074C48.1665 45.1615 46.2815 45.1615 44.3506 45.2074C43.9368 45.2074 43.8448 45.1155 43.8448 44.7017C43.8448 41.2996 43.8448 37.8514 43.8448 34.4493C43.8448 33.6677 43.7989 32.8861 43.569 32.1505C42.8793 29.7598 40.1208 28.8863 38.1439 30.4954C37.0865 31.323 36.6727 32.4723 36.6727 33.8516C36.6727 37.0699 36.6727 40.2881 36.6727 43.5064C36.6727 43.9201 36.6267 44.3339 36.6727 44.7937C36.7187 45.1615 36.5348 45.2534 36.213 45.2074C34.236 45.2074 32.3051 45.2074 30.3282 45.2074C29.9604 45.2074 29.8684 45.1155 29.8684 44.7477C29.9144 41.8513 29.9144 38.9548 29.9144 36.0124C29.9144 32.4264 29.9144 28.8403 29.8684 25.3002C29.8684 24.8865 29.9604 24.7945 30.3282 24.7945C32.3051 24.7945 34.236 24.7945 36.213 24.7945C36.5808 24.7945 36.6727 24.8865 36.6727 25.2543C36.6727 25.9899 36.6727 26.7255 36.6727 27.599C36.8106 27.4611 36.8566 27.4151 36.9026 27.3691C38.6956 24.7485 41.2242 24.0129 44.2126 24.4727C47.6608 25.0244 49.8676 27.4151 50.4193 31.0931C50.5572 31.9666 50.6032 32.8401 50.6032 33.7137C50.6032 37.3917 50.6032 41.0237 50.6032 44.7017C50.6032 45.0695 50.5112 45.2074 50.0974 45.2074Z" fill="#F5F5F7"/>
+                            <path d="M26.1927 35.0015C26.1927 38.2198 26.1927 41.438 26.1927 44.6563C26.1927 45.07 26.1007 45.208 25.6869 45.208C23.756 45.162 21.825 45.208 19.8941 45.208C19.5263 45.208 19.4343 45.116 19.4343 44.7482C19.4343 38.2657 19.4343 31.7373 19.4343 25.2548C19.4343 24.933 19.5263 24.795 19.8941 24.795C21.871 24.795 23.8479 24.795 25.8249 24.795C26.2386 24.795 26.2846 24.933 26.2846 25.3008C26.1927 28.519 26.1927 31.7373 26.1927 35.0015Z" fill="#F5F5F7"/>
+                            <path d="M26.5159 19.4614C26.0561 21.3004 24.1712 22.3578 22.0103 21.99C19.7116 21.6222 18.4243 19.3694 19.2518 17.1626C19.8035 15.7834 21.1368 14.9558 22.8379 15.0018C25.4125 14.9558 27.1136 17.0247 26.5159 19.4614Z" fill="#F5F5F7"/>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="description footer__copyright">© 2021 Digital verse</p>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#hero-scroll" class="footer__item-link">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#inspire-scroll" class="footer__item-link">Videos</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#find-scroll" class="footer__item-link">Faces</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#offer-scroll" class="footer__item-link">Offer</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#questions-scroll" class="footer__item-link">F.A.Q</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+<div class="modal-background"></div>
+<div class="modal-log" id="sign">
+    <span class="modal-log__close" id="sign-close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+        </svg>
+    </span>
+    <h1 class="heading modal-log__heading">Sign In</h1>
+    <div class="modal-log__buttons">
+        <a href="#" class="modal-log__google"><span class="modal-log__google-icon"></span>Google</a>
+        <a href="#" class="modal-log__facebook"><span class="modal-log__facebook-icon"></span>Facebook</a>
+    </div>
+    <div class="modal-log__separator">
+        <span class="modal-log__border"></span>
+        <span class="modal-log__between">Or</span>
+        <span class="modal-log__border"></span>
+    </div>
+    <form class="modal-log__form" id="form-sign">
+        <div class="modal-log__form-input modal-log__email">
+            <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email" data-path="modal-log__email">
+            <label class ="modal-log__label" data-target="modal-log__email">Email</label>
+        </div>
+        <div class="modal-log__form-input modal-log__password">
+            <input type="password" class ="modal-log__input" placeholder="Password" autocomplete ="off" name ="password" id = "password" data-path="modal-log__password">
+            <label class ="modal-log__label" data-target="modal-log__password">Password</label>
+        </div>
+        <a href="#" class="modal-log__recover">Forgot the password ?</a>
+        <button class="button modal-log__button">Sign in</button>
+    </form>
+    <p class="second-description modal-log__registration">New Here? <span class="modal-log__registration-link">Create an account</span></p>
+</div>
+
+<div class="modal-log" id="create">
+    <span class="modal-log__close" id="create-close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+        </svg>
+    </span>
+    <h1 class="heading modal-log__heading">Sign In</h1>
+    <form class="modal-log__form" id="form-create">
+        <div class="modal-log__form-input modal-log__create-email">
+            <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email-create" data-path="modal-log__create-email">
+            <label class ="modal-log__label" data-target="modal-log__create-email">Email</label>
+        </div>
+        <div class="modal-log__form-input modal-log__create-password">
+            <input type="password" class ="modal-log__input" placeholder="Password" autocomplete ="off" name ="password" id = "password-create" data-path="modal-log__create-password">
+            <label class ="modal-log__label" data-target="modal-log__create-password">Password</label>
+        </div>
+        <div class="modal-log__form-input modal-log__create-confirm">
+            <input type="password" class ="modal-log__input" placeholder="Confirm password" autocomplete ="off" name ="password" id = "confirm-create" data-path="modal-log__create-confirm">
+            <label class ="modal-log__label" data-target="modal-log__create-confirm">Confirm password</label>
+        </div>
+        <div class="modal-log__form-input modal-log__input-checkbox">
+            <label class="modal-log__label-checkbox">
+                <input type="checkbox" class="modal-log__disabled-checkbox" id="checkbox-create">
+                <span class="modal-log__checkbox">
+                    <span class="modal-log__checkbox-icon"></span>
+                </span>
+            </label>
+            <p class="modal-log__label-terms">
+                Create an account and agree to the <a href="#">terms</a> of personal data processing
+            </p>
+        </div>
+        <button class="button modal-log__button-create">Create account</button>
+    </form>
+</div>
+
+<div class="modal-log modal-reset" id="reset">
+    <span class="modal-log__back" id="reset-back">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.104 1L1.104 12L12.104 23" stroke="#5C5C7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.104 12L23.104 12" stroke="#5C5C7B" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </span>
+    <span class="modal-log__close" id="reset-close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+        </svg>
+    </span>
+    <h1 class="heading modal-log__heading modal-log__heading-reset">Reset password</h1>
+    <p class="modal-log__description">Please enter your email to get a link to the password change page</p>
+    <form class="modal-log__form" id="form-reset">
+        <div class="modal-log__form-input modal-log__reset-email">
+            <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email-reset" data-path="modal-log__reset-email">
+            <label class ="modal-log__label" data-target="modal-log__reset-email">Email</label>
+        </div>
+        <button class="button modal-log__button-reset">Get the Link</button>
+    </form>
+</div>
+
+<div class="modal-log" id="request-company">
+    <span class="modal-log__close" id="company-close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+        </svg>
+    </span>
+    <h1 class="heading modal-log__heading modal-log__heading-company">Request a Demo</h1>
+    <p class="modal-log__description modal-log__description-company">DigitalVerse platform is currently in beta testing. You can join the beta and get access to the platform by filling out this form.</p>
+    <form class="modal-log__form" id="form-company">
+        <div class="modal-log__form-input modal-log__company-name">
+            <input type="name" class ="modal-log__input" placeholder="Name*" autocomplete ="off" name ="name" id = "name-company" data-path="modal-log__company-name">
+            <label class ="modal-log__label" data-target="modal-log__company-name">Name*</label>
+        </div>
+        <div class="modal-log__form-input modal-log__company-name">
+            <input type="name" class ="modal-log__input" placeholder="Company Name*" autocomplete ="off" name ="name" id = "title-company" data-path="modal-log__company-title">
+            <label class ="modal-log__label" data-target="modal-log__company-title">Company Name*</label>
+        </div>
+        <div class="modal-log__form-input modal-log__company-site">
+            <input type="name" class ="modal-log__input" placeholder="WebSite*" autocomplete ="off" name ="name" id = "site-company" data-path="modal-log__company-site">
+            <label class ="modal-log__label" data-target="modal-log__company-site">WebSite*</label>
+        </div>
+        <div class="modal-log__form-input modal-log__company-email">
+            <input type="email" class ="modal-log__input" placeholder="Work Email*" autocomplete ="off" name ="email" id = "email-company" data-path="modal-log__company-email">
+            <label class ="modal-log__label" data-target="modal-log__company-email">Work Email*</label>
+        </div>
+        <div class="modal-log__form-input modal-log__input-checkbox">
+            <label class="modal-log__label-checkbox">
+                <input type="checkbox" class="modal-log__disabled-checkbox" id="checkbox-company">
+                <span class="modal-log__checkbox">
+                    <span class="modal-log__checkbox-icon"></span>
+                </span>
+            </label>
+            <p class="modal-log__label-terms">By submitting this form, you agree that your personal data may be processed and stored by DigitalVerse using third-party services</p>
+        </div>
+        <button class="button modal-log__button-company">Submit request</button>
+    </form>
+</div>
+
+<div class="modal-log" id="request-guests">
+    <span class="modal-log__close" id="guests-close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+        </svg>
+    </span>
+    <h1 class="heading modal-log__heading modal-log__heading-guests">Request a Demo</h1>
+    <p class="modal-log__description modal-log__description-guests">DigitalVerse platform is currently in beta testing. You can join the beta and get access to the platform by filling out this form.</p>
+    <form class="modal-log__form" id="form-guests">
+        <div class="modal-log__form-input modal-log__company-name">
+            <input type="name" class ="modal-log__input" placeholder="Name*" autocomplete ="off" name ="name" id = "name-guests" data-path="modal-log__guests-name">
+            <label class ="modal-log__label" data-target="modal-log__guests-name">Name*</label>
+        </div>
+        <div class="modal-log__form-input modal-log__guests-email">
+            <input type="email" class ="modal-log__input" placeholder="Email*" autocomplete ="off" name ="email" id = "email-guests" data-path="modal-log__guests-email">
+            <label class ="modal-log__label" data-target="modal-log__guests-email">Email*</label>
+        </div>
+        <span class="modal-log__border modal-log__guests-border"></span>
+        <h2 class="modal-log__guests-title">Link to your blog*</h2>
+        <p class="modal-log__description modal-log__warning-guests">Мы даем доступы только блогерам, для верификации оставьте ссылки на ваши блоги в соцсетях</p>
+        <div class="modal-log__form-input modal-log__guests-instagram">
+            <input type="name" class ="modal-log__input modal-log__guests-input" placeholder="Instagram" autocomplete ="off" name ="name" id = "instagram-guests" data-path="modal-log__guests-instagram">
+            <label class ="modal-log__label modal-log__guests-label" data-target="modal-log__guests-instagram">Instagram</label>
+            <span class="modal-log__guests-icon-instagram"></span>
+        </div>
+        <span class="modal-log__between modal-log__guests-between">Or</span>
+        <div class="modal-log__form-input modal-log__guests-channel">
+            <input type="name" class ="modal-log__input" placeholder="Any other channel" autocomplete ="off" name ="name" id = "channel-guests" data-path="modal-log__guests-channel">
+            <label class ="modal-log__label" data-target="modal-log__guests-channel">Any other channel</label>
+        </div>
+        <div class="modal-log__form-input modal-log__input-checkbox">
+            <label class="modal-log__label-checkbox">
+                <input type="checkbox" class="modal-log__disabled-checkbox" id="checkbox-guests">
+                <span class="modal-log__checkbox">
+                    <span class="modal-log__checkbox-icon"></span>
+                </span>
+            </label>
+            <p class="modal-log__label-terms">By submitting this form, you agree that your personal data may be processed and stored by DigitalVerse using third-party services</p>
+        </div>
+        <button class="button modal-log__button-company">Submit request</button>
+    </form>
+</div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 0,
+        },
+        slidesPerView: 6,
+        spaceBetween: 26,
+        speed: 8000,
+        direction: 'horizontal',
+        allowTouchMove: false,
+        })
+    </script>
+</body>
+</html>
