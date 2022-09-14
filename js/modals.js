@@ -60,6 +60,31 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector('.modal-background').classList.add('modal-background-active')
     })
 
+    // request guests mobile
+    document.getElementById('guests-close').addEventListener('click', function() {
+        document.getElementById('request-guests').classList.remove('modal-log-active')
+        document.querySelector('.modal-background').classList.remove('modal-background-active')
+    })
+    document.getElementById('guests-btn-mobile').addEventListener('click', function() {
+        document.getElementById('request-guests').classList.add('modal-log-active')
+        document.querySelector('.modal-background').classList.add('modal-background-active')
+    })
+    //request company mobile
+    document.getElementById('company-close').addEventListener('click', function() {
+        document.getElementById('request-company').classList.remove('modal-log-active')
+        document.querySelector('.modal-background').classList.remove('modal-background-active')
+    })
+    document.getElementById('company-btn-mobile').addEventListener('click', function() {
+        document.getElementById('request-company').classList.add('modal-log-active')
+        document.querySelector('.modal-background').classList.add('modal-background-active')
+    })
+     // burger
+     document.getElementById('close-burger').addEventListener('click', function() {
+        document.getElementById('menu-mobile').classList.remove('header__nav-mobile-active')
+    })
+    document.getElementById('burger-mobile').addEventListener('click', function() {
+        document.getElementById('menu-mobile').classList.add('header__nav-mobile-active')
+    })
     // Input
 
     let inputs = document.querySelectorAll('.modal-log__input')

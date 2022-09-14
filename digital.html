@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <title>Document</title>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script defer src="js/accordions.js"></script>
@@ -63,7 +64,7 @@
             </div>
         </section>
         
-        <section class="section-questions">
+        <section class="section-questions section-questions-digital">
             <div class="container section-questions__container">
                 <h1 class="heading section-questions__heading">F.A.Q</h1>
                 <div class="accordion">
@@ -214,135 +215,143 @@
     </footer>
     <div class="modal-background"></div>
     <div class="modal-log" id="sign">
-        <span class="modal-log__close" id="sign-close">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
-            </svg>
-        </span>
-        <h1 class="heading modal-log__heading">Sign In</h1>
-        <div class="modal-log__buttons">
-            <a href="#" class="modal-log__google"><span class="modal-log__google-icon"></span>Google</a>
-            <a href="#" class="modal-log__facebook"><span class="modal-log__facebook-icon"></span>Facebook</a>
-        </div>
-        <div class="modal-log__separator">
-            <span class="modal-log__border"></span>
-            <span class="modal-log__between">Or</span>
-            <span class="modal-log__border"></span>
-        </div>
-        <form class="modal-log__form" id="form-sign">
-            <div class="modal-log__form-input modal-log__email">
-                <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email" data-path="modal-log__email">
-                <label class ="modal-log__label" data-target="modal-log__email">Email</label>
+        <div class="modal-limit">
+            <span class="modal-log__close" id="sign-close">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+                </svg>
+            </span>
+            <h1 class="heading modal-log__heading">Sign In</h1>
+            <div class="modal-log__buttons">
+                <a href="#" class="modal-log__google"><span class="modal-log__google-icon"></span>Google</a>
+                <a href="#" class="modal-log__facebook"><span class="modal-log__facebook-icon"></span>Facebook</a>
             </div>
-            <div class="modal-log__form-input modal-log__password">
-                <input type="password" class ="modal-log__input" placeholder="Password" autocomplete ="off" name ="password" id = "password" data-path="modal-log__password">
-                <label class ="modal-log__label" data-target="modal-log__password">Password</label>
+            <div class="modal-log__separator">
+                <span class="modal-log__border"></span>
+                <span class="modal-log__between">Or</span>
+                <span class="modal-log__border"></span>
             </div>
-            <a href="#" class="modal-log__recover">Forgot the password ?</a>
-            <button class="button modal-log__button">Sign in</button>
-        </form>
-        <p class="second-description modal-log__registration">New Here? <span class="modal-log__registration-link">Create an account</span></p>
+            <form class="modal-log__form" id="form-sign">
+                <div class="modal-log__form-input modal-log__email">
+                    <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email" data-path="modal-log__email">
+                    <label class ="modal-log__label" data-target="modal-log__email">Email</label>
+                </div>
+                <div class="modal-log__form-input modal-log__password">
+                    <input type="password" class ="modal-log__input" placeholder="Password" autocomplete ="off" name ="password" id = "password" data-path="modal-log__password">
+                    <label class ="modal-log__label" data-target="modal-log__password">Password</label>
+                </div>
+                <a href="#" class="modal-log__recover">Forgot the password ?</a>
+                <button class="button modal-log__button">Sign in</button>
+            </form>
+            <p class="second-description modal-log__registration">New Here? <span class="modal-log__registration-link">Create an account</span></p>
+        </div>
     </div>
     
     <div class="modal-log" id="create">
-        <span class="modal-log__close" id="create-close">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
-            </svg>
-        </span>
-        <h1 class="heading modal-log__heading">Sign In</h1>
-        <form class="modal-log__form" id="form-create">
-            <div class="modal-log__form-input modal-log__create-email">
-                <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email-create" data-path="modal-log__create-email">
-                <label class ="modal-log__label" data-target="modal-log__create-email">Email</label>
-            </div>
-            <div class="modal-log__form-input modal-log__create-password">
-                <input type="password" class ="modal-log__input" placeholder="Password" autocomplete ="off" name ="password" id = "password-create" data-path="modal-log__create-password">
-                <label class ="modal-log__label" data-target="modal-log__create-password">Password</label>
-            </div>
-            <div class="modal-log__form-input modal-log__create-confirm">
-                <input type="password" class ="modal-log__input" placeholder="Confirm password" autocomplete ="off" name ="password" id = "confirm-create" data-path="modal-log__create-confirm">
-                <label class ="modal-log__label" data-target="modal-log__create-confirm">Confirm password</label>
-            </div>
-            <div class="modal-log__form-input modal-log__input-checkbox">
-                <label class="modal-log__label-checkbox">
-                    <input type="checkbox" class="modal-log__disabled-checkbox" id="checkbox-create">
-                    <span class="modal-log__checkbox">
-                        <span class="modal-log__checkbox-icon"></span>
-                    </span>
-                </label>
-                <p class="modal-log__label-terms">
-                    Create an account and agree to the <a href="#">terms</a> of personal data processing
-                </p>
-            </div>
-            <button class="button modal-log__button-create">Create account</button>
-        </form>
+        <div class="modal-limit">
+            <span class="modal-log__close" id="create-close">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+                </svg>
+            </span>
+            <h1 class="heading modal-log__heading">Sign In</h1>
+            <form class="modal-log__form" id="form-create">
+                <div class="modal-log__form-input modal-log__create-email">
+                    <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email-create" data-path="modal-log__create-email">
+                    <label class ="modal-log__label" data-target="modal-log__create-email">Email</label>
+                </div>
+                <div class="modal-log__form-input modal-log__create-password">
+                    <input type="password" class ="modal-log__input" placeholder="Password" autocomplete ="off" name ="password" id = "password-create" data-path="modal-log__create-password">
+                    <label class ="modal-log__label" data-target="modal-log__create-password">Password</label>
+                </div>
+                <div class="modal-log__form-input modal-log__create-confirm">
+                    <input type="password" class ="modal-log__input" placeholder="Confirm password" autocomplete ="off" name ="password" id = "confirm-create" data-path="modal-log__create-confirm">
+                    <label class ="modal-log__label" data-target="modal-log__create-confirm">Confirm password</label>
+                </div>
+                <div class="modal-log__form-input modal-log__input-checkbox">
+                    <label class="modal-log__label-checkbox">
+                        <input type="checkbox" class="modal-log__disabled-checkbox" id="checkbox-create">
+                        <span class="modal-log__checkbox">
+                            <span class="modal-log__checkbox-icon"></span>
+                        </span>
+                    </label>
+                    <p class="modal-log__label-terms">
+                        Create an account and agree to the <a href="#">terms</a> of personal data processing
+                    </p>
+                </div>
+                <button class="button modal-log__button-create">Create account</button>
+            </form>
+        </div>
     </div>
     
     <div class="modal-log modal-reset" id="reset">
-        <span class="modal-log__back" id="reset-back">
-            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.104 1L1.104 12L12.104 23" stroke="#5C5C7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2.104 12L23.104 12" stroke="#5C5C7B" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        </span>
-        <span class="modal-log__close" id="reset-close">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
-            </svg>
-        </span>
-        <h1 class="heading modal-log__heading modal-log__heading-reset">Reset password</h1>
-        <p class="modal-log__description">Please enter your email to get a link to the password change page</p>
-        <form class="modal-log__form" id="form-reset">
-            <div class="modal-log__form-input modal-log__reset-email">
-                <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email-reset" data-path="modal-log__reset-email">
-                <label class ="modal-log__label" data-target="modal-log__reset-email">Email</label>
-            </div>
-            <button class="button modal-log__button-reset">Get the Link</button>
-        </form>
+        <div class="modal-limit">
+            <span class="modal-log__back" id="reset-back">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.104 1L1.104 12L12.104 23" stroke="#5C5C7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2.104 12L23.104 12" stroke="#5C5C7B" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
+            <span class="modal-log__close" id="reset-close">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+                </svg>
+            </span>
+            <h1 class="heading modal-log__heading modal-log__heading-reset">Reset password</h1>
+            <p class="modal-log__description">Please enter your email to get a link to the password change page</p>
+            <form class="modal-log__form" id="form-reset">
+                <div class="modal-log__form-input modal-log__reset-email">
+                    <input type="email" class ="modal-log__input" placeholder="Email" autocomplete ="off" name ="email" id = "email-reset" data-path="modal-log__reset-email">
+                    <label class ="modal-log__label" data-target="modal-log__reset-email">Email</label>
+                </div>
+                <button class="button modal-log__button-reset">Get the Link</button>
+            </form>
+        </div>
     </div>
     
     <div class="modal-log" id="request-guests">
-        <span class="modal-log__close" id="guests-close">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
-            </svg>
-        </span>
-        <h1 class="heading modal-log__heading modal-log__heading-guests">Request a Demo</h1>
-        <p class="modal-log__description modal-log__description-guests">DigitalVerse platform is currently in beta testing. You can join the beta and get access to the platform by filling out this form.</p>
-        <form class="modal-log__form" id="form-guests">
-            <div class="modal-log__form-input modal-log__company-name">
-                <input type="name" class ="modal-log__input" placeholder="Name*" autocomplete ="off" name ="name" id = "name-guests" data-path="modal-log__guests-name">
-                <label class ="modal-log__label" data-target="modal-log__guests-name">Name*</label>
-            </div>
-            <div class="modal-log__form-input modal-log__guests-email">
-                <input type="email" class ="modal-log__input" placeholder="Email*" autocomplete ="off" name ="email" id = "email-guests" data-path="modal-log__guests-email">
-                <label class ="modal-log__label" data-target="modal-log__guests-email">Email*</label>
-            </div>
-            <span class="modal-log__border modal-log__guests-border"></span>
-            <h2 class="modal-log__guests-title">Link to your blog*</h2>
-            <p class="modal-log__description modal-log__warning-guests">Мы даем доступы только блогерам, для верификации оставьте ссылки на ваши блоги в соцсетях</p>
-            <div class="modal-log__form-input modal-log__guests-instagram">
-                <input type="name" class ="modal-log__input modal-log__guests-input" placeholder="Instagram" autocomplete ="off" name ="name" id = "instagram-guests" data-path="modal-log__guests-instagram">
-                <label class ="modal-log__label modal-log__guests-label" data-target="modal-log__guests-instagram">Instagram</label>
-                <span class="modal-log__guests-icon-instagram"></span>
-            </div>
-            <span class="modal-log__between modal-log__guests-between">Or</span>
-            <div class="modal-log__form-input modal-log__guests-channel">
-                <input type="name" class ="modal-log__input" placeholder="Any other channel" autocomplete ="off" name ="name" id = "channel-guests" data-path="modal-log__guests-channel">
-                <label class ="modal-log__label" data-target="modal-log__guests-channel">Any other channel</label>
-            </div>
-            <div class="modal-log__form-input modal-log__input-checkbox">
-                <label class="modal-log__label-checkbox">
-                    <input type="checkbox" class="modal-log__disabled-checkbox" id="checkbox-guests">
-                    <span class="modal-log__checkbox">
-                        <span class="modal-log__checkbox-icon"></span>
-                    </span>
-                </label>
-                <p class="modal-log__label-terms">By submitting this form, you agree that your personal data may be processed and stored by DigitalVerse using third-party services</p>
-            </div>
-            <button class="button modal-log__button-company">Submit request</button>
-        </form>
-    </div>
+        <div class="modal-limit">
+            <span class="modal-log__close" id="guests-close">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.6302 24.7838C2.23968 25.1743 1.60651 25.1743 1.21599 24.7838C0.825465 24.3933 0.825465 23.7601 1.21599 23.3696L11.5858 12.9998L1.21599 2.62996C0.825465 2.23944 0.825465 1.60627 1.21599 1.21575C1.60651 0.825222 2.23968 0.825222 2.6302 1.21575L13 11.5856L23.3698 1.21574C23.7604 0.825221 24.3935 0.825221 24.784 1.21574C25.1746 1.60627 25.1746 2.23943 24.784 2.62996L14.4142 12.9998L24.784 23.3696C25.1746 23.7601 25.1746 24.3933 24.784 24.7838C24.3935 25.1743 23.7604 25.1743 23.3698 24.7838L13 14.414L2.6302 24.7838Z" fill="#5C5C7B"/>
+                </svg>
+            </span>
+            <h1 class="heading modal-log__heading modal-log__heading-guests">Request a Demo</h1>
+            <p class="modal-log__description modal-log__description-guests">DigitalVerse platform is currently in beta testing. You can join the beta and get access to the platform by filling out this form.</p>
+            <form class="modal-log__form" id="form-guests">
+                <div class="modal-log__form-input modal-log__company-name">
+                    <input type="name" class ="modal-log__input" placeholder="Name*" autocomplete ="off" name ="name" id = "name-guests" data-path="modal-log__guests-name">
+                    <label class ="modal-log__label" data-target="modal-log__guests-name">Name*</label>
+                </div>
+                <div class="modal-log__form-input modal-log__guests-email">
+                    <input type="email" class ="modal-log__input" placeholder="Email*" autocomplete ="off" name ="email" id = "email-guests" data-path="modal-log__guests-email">
+                    <label class ="modal-log__label" data-target="modal-log__guests-email">Email*</label>
+                </div>
+                <span class="modal-log__border modal-log__guests-border"></span>
+                <h2 class="modal-log__guests-title">Link to your blog*</h2>
+                <p class="modal-log__description modal-log__warning-guests">Мы даем доступы только блогерам, для верификации оставьте ссылки на ваши блоги в соцсетях</p>
+                <div class="modal-log__form-input modal-log__guests-instagram">
+                    <input type="name" class ="modal-log__input modal-log__guests-input" placeholder="Instagram" autocomplete ="off" name ="name" id = "instagram-guests" data-path="modal-log__guests-instagram">
+                    <label class ="modal-log__label modal-log__guests-label" data-target="modal-log__guests-instagram">Instagram</label>
+                    <span class="modal-log__guests-icon-instagram"></span>
+                </div>
+                <span class="modal-log__between modal-log__guests-between">Or</span>
+                <div class="modal-log__form-input modal-log__guests-channel">
+                    <input type="name" class ="modal-log__input" placeholder="Any other channel" autocomplete ="off" name ="name" id = "channel-guests" data-path="modal-log__guests-channel">
+                    <label class ="modal-log__label" data-target="modal-log__guests-channel">Any other channel</label>
+                </div>
+                <div class="modal-log__form-input modal-log__input-checkbox">
+                    <label class="modal-log__label-checkbox">
+                        <input type="checkbox" class="modal-log__disabled-checkbox" id="checkbox-guests">
+                        <span class="modal-log__checkbox">
+                            <span class="modal-log__checkbox-icon"></span>
+                        </span>
+                    </label>
+                    <p class="modal-log__label-terms">By submitting this form, you agree that your personal data may be processed and stored by DigitalVerse using third-party services</p>
+                </div>
+                <button class="button modal-log__button-company">Submit request</button>
+            </form>
+        </div>
+    </div>  
 </body>
 </html>

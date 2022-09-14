@@ -244,6 +244,12 @@ body {
 .header_btn .button-background {
     padding: 18px 33px;
 }
+.header__burger {
+    display: none;
+}
+.header__nav-mobile {
+    display: none;
+}
 /*effect*/
 .header__item-link:hover {
     color: #F5F5F7;
@@ -251,6 +257,7 @@ body {
 /*section-hero*/
 .section-hero {
     padding-top: 100px;
+    padding-bottom: 20px;
 }
 .section-hero-container {
     text-align: center;
@@ -303,12 +310,20 @@ body {
     margin-top: 40px;
     margin-left: auto;
 }
+.section-hero__logo-mobile {
+    display: none;
+}
+.section-hero__btn-digitize-mobile, .section-hero__btn-create-mobile {
+    display: none;
+}
 /*section-inspire*/
 .section-inspire {
-    padding-top: 120px;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 .section-inspire__container {
     display: flex;
+    
 }
 .section-inspire__left {
     position: relative;
@@ -328,8 +343,6 @@ body {
 .section-inspire__row {
     display: flex;
     margin: 0 -20px 60px -20px;
-    max-height: 2200px;
-    overflow: hidden;
     position: relative;
 }
 .section-inspire__row::after {
@@ -337,18 +350,22 @@ body {
     width: 100%;
     height: 220px;
     position: absolute;
-    bottom: -2px;
+    bottom: -3px;
     background: url('../images/Gradient.png') no-repeat;
     background-position: left bottom;
-    background-size: 100%;
+    background-size: 100% 100%;
     pointer-events: none;
 }
 .section-inspire__column {
+    display: flex;
     flex-direction: column;
+    max-height: 2200px;
+    overflow: hidden;
     padding: 0 20px;
 }
 .section-inspire__column:nth-child(2) {
     margin-top: 70px;
+    max-height: 2130px;
 }
 .section-inspire__item {
     max-width: 353px;
@@ -405,7 +422,7 @@ body {
 }
 /*section-find*/
 .section-find {
-    padding-top: 300px;
+    padding-top: 100px;
     padding-bottom: 200px;
 }
 .section-find__soon {
@@ -488,6 +505,9 @@ body {
     background: #20202E;
 }
 /*section-support*/
+.section-support {
+    padding-bottom: 100px;
+}
 .section-support__heading {
     text-align: center;
     font-size: 40px;
@@ -507,7 +527,7 @@ body {
 }
 /*section-questions*/
 .section-questions {
-    padding-top: 200px;
+    padding-top: 100px;
 }
 .section-questions__container {
     position: relative;
@@ -779,7 +799,7 @@ body {
 /*modal-background*/
 .modal-background {
     position: fixed;
-    z-index: 99999;
+    z-index: 14;
     top: 0;
     left: 0;
     right: 0;
@@ -795,20 +815,37 @@ body {
 .modal-log {
     position:fixed;
     z-index: 99999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #20202E;
-    border-radius: 32px;
-    width: 550px;
-    padding: 60px 95px 70px 95px;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    transform: scale(0);
     opacity: 0.5;
     transition-property: transform, opacity;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
+.modal-limit {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: #20202E;
+    border-radius: 32px;
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    padding: 60px 95px 70px 95px;
+    overflow-y: auto;
+}
+#sign .modal-limit{
+    max-height: 630px;
+}
+.modal-limit::-webkit-scrollbar {
+    width: 0;
+}
 .modal-log-active {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
     opacity: 1;
     transition-property: transform, opacity;
     transition-duration: 0.3s;
@@ -980,6 +1017,9 @@ body {
 }
 
 /*form create*/
+#create .modal-limit{
+    max-height: 590px;
+}
 .modal-log__create-email, .modal-log__create-password, .modal-log__create-confirm{
     margin-bottom: 25px;
 }
@@ -1048,6 +1088,9 @@ body {
     margin-top: 50px;
 }
 /*reset form*/
+#reset .modal-limit{
+    max-height: 440px;
+}
 .modal-reset {
     padding-top: 160px;
     padding-bottom: 220px;
@@ -1075,6 +1118,9 @@ body {
     margin-top: 30px;
 }
 /*request-company*/
+#request-company .modal-limit{
+    max-height: 775px;
+}
 .modal-log__heading-company {
     margin-bottom: 16px;
 }
@@ -1089,6 +1135,9 @@ body {
     margin-top: 50px;
 }
 /*request-guests*/
+#request-guests .modal-limit{
+    max-height: 945px;
+}
 .modal-log__heading-guests {
     margin-bottom: 15px;
 }
