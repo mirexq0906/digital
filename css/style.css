@@ -464,7 +464,7 @@ body {
     padding-bottom: 200px;
     background: url('../images/wave.svg') no-repeat;
     background-size: 1920px;
-    background-position: center top 250px;
+    background-position: center top 100px;
 }
 .section-offer__heading {
     margin-bottom: 80px;
@@ -651,7 +651,7 @@ body {
 /*section-make*/
 .section-make {
     padding-top: 120px;
-    padding-bottom: 350px;
+    padding-bottom: 430px;
     position: relative;
 }
 .section-make::after {
@@ -663,7 +663,7 @@ body {
     background: url('../images/wave-digital.svg') no-repeat;
     background-size: 100%;
     background-position: center center;
-    bottom: -500px;
+    bottom: -420px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -763,6 +763,7 @@ body {
 .section-find-generate {
     position: relative;
     padding-top: 220px;
+    padding-bottom: 0;
 }
 .section-find-generate::after {
     content: '';
