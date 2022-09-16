@@ -86,8 +86,19 @@ document.addEventListener('DOMContentLoaded', function(){
         document.getElementById('menu-mobile').classList.add('header__nav-mobile-active')
     })
     // Input
-
+    let find = document.querySelector('.section-find__input')
     let inputs = document.querySelectorAll('.modal-log__input')
+   
+    find.addEventListener('input', function(inputClick) {
+        const target = inputClick.currentTarget.dataset.path
+        if (find.value != 0) {
+            document.querySelector(`[data-target="${target}"]`).classList.add('section-find__label-active');
+            find.classList.add('section-find__input-active');
+        } else {
+            document.querySelector(`[data-target="${target}"]`).classList.remove('section-find__label-active');
+            find.classList.remove('section-find__input-active');
+        }
+    })
     inputs.forEach(function(input) {
         input.addEventListener('input', function(inputClick) {
             const target = inputClick.currentTarget.dataset.path
@@ -260,5 +271,16 @@ document.addEventListener('DOMContentLoaded', function(){
             errorMessage: 'Поле обязательно для заполнения',
             },
         ])
-        
+        const findForm = new JustValidate('#form-find');
+        findForm
+        .addField('#find-email', [
+            {
+            rule: 'required',
+            errorMessage: 'Поле обязательно для заполнения',
+            },
+            {
+            rule: 'email',
+            errorMessage: 'Неправильный email!',
+            },
+        ])
 })

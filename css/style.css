@@ -443,8 +443,14 @@ body {
     text-align: center;
 }
 .section-find__form {
-    text-align: center;
+    justify-content: center;
     margin-bottom: 80px;
+    display: flex;
+}
+.section-find__form-input {
+    position: relative;
+    width: 395px;
+    margin-right: 10px;
 }
 .section-find__input {
     width: 395px;
@@ -453,10 +459,56 @@ body {
     padding: 20px 25px;
     border: none;
     border-radius: 12px;
-    margin-right: 10px;
+    font-size: 16px;
+}
+.section-find__label {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 16px;
+    color: #B9B9BF;
+    transition-property: top, font-size;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+}
+.section-find__label-active {
+    top: 10px;
+    font-size: 12px;
+    transition-property: top, font-size;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+.section-find__input-active {
+    padding: 28px 25px 12px 25px;
+}
+.section-find__input:focus ~ .section-find__label{
+    top: 10px;
+    font-size: 12px;
+}
+.section-find__input:focus {
+    padding: 28px 25px 12px 25px;
+}
+.just-validate-error-field ~ .section-find__label {
+    display: none;
 }
 .section-find__input::placeholder {
+    color: transparent;
+}
+.section-find__form-input .just-validate-error-field {
+    border: 1px solid rgb(184, 17, 17);
+    padding: 28px 25px 12px 25px;
+}
+.section-find__form-input .just-validate-error-label {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 12px;
+}
+.section-find__form-input .just-validate-error-field::placeholder {
     color: #B9B9BF;
+    font-size: 16px;
+    line-height: 1;
 }
 /*section-offer*/
 .section-offer {

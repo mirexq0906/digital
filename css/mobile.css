@@ -272,6 +272,29 @@
     .section-find__input {
         padding: 15px 25px;
     }
+    .section-find__label {
+        top: 15px;
+        left: 25px;
+    }
+    .section-find__label-active {
+        top: 8px;
+    }
+    .section-find__input-active {
+        padding: 22px 25px 8px 25px;
+    }
+    .section-find__input:focus ~ .section-find__label{
+        top: 8px;
+    }
+    .section-find__input:focus {
+        padding: 22px 25px 8px 25px;
+    }
+    .section-find__form-input .just-validate-error-field {
+        padding: 22px 25px 8px 25px;
+    }
+    .section-find__form-input .just-validate-error-label {
+        top: 8px;
+        left: 25px;
+    }
     /*section-offer*/
     .section-offer__list {
         display: block;
@@ -301,6 +324,12 @@
         max-width: 230px;
     }
     /*section-find*/
+    .section-find__form {
+        display: block;
+    }
+    .section-find__form-input {
+        width: 100%;
+    }
     .section-find__input {
         width: 100%;
     }

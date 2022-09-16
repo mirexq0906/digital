@@ -74,8 +74,11 @@
                     </div>
                     <h1 class="heading section-find__heading">Find Your Face</h1>
                     <p class="description section-find__description">Easily purchase a face for your video from our marketplace. Your ownership will be secured by an NFT token and recorded in the most secure database - blockchain.</p>
-                    <form class="section-find__form section-find__form-generate">
-                        <input class="section-find__input section-find__input-generate" type="text" placeholder="E-mail">
+                    <form class="section-find__form section-find__form-generate" id="form-find">
+                        <div class="section-find__form-input">
+                            <input class="section-find__input" type="text" placeholder="Email" data-path="modal-find__form" id="find-email">
+                            <label class="section-find__label" data-target="modal-find__form">Email</label>
+                        </div>
                         <button class="button section-find__btn">Subscribe</button>
                     </form>
                 </div>
